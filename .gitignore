@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+mcp/node_modules/
+
+# Build output
+dist/
+
+# Environment variables - keep .env.example, ignore the real .env
+.env
+
+# Database files (SQLite)
+mcp/data.db
+mcp/data.db-shm
+mcp/data.db-wal
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
+
+# TypeScript build info
+*.tsbuildinfo
