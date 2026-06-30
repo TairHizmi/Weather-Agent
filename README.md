@@ -1,6 +1,6 @@
 # Weather Agent - MCP Server with AI Tools
 
-A Model Context Protocol (MCP) server exposing AI-callable tools (weather, products, posts, and SQL queries) with a LangGraph tool-calling agent and a SQLite-backed database.
+A Model Context Protocol (MCP) server exposing AI-callable tools (weather and SQL queries) with a LangGraph tool-calling agent and a SQLite-backed database.
 
 ## 🚀 Features
 
@@ -8,8 +8,6 @@ A Model Context Protocol (MCP) server exposing AI-callable tools (weather, produ
 - **Tool-calling agent** integration (LangGraph)
 - Custom tools:
   - `getWeather` – fetches weather data
-  - `getProducts` – retrieves product information
-  - `fetchPosts` – fetches posts data
   - `query_sql` – runs **read-only (SELECT only)** queries against the local SQLite database
 - SQLite database (`better-sqlite3`) for persistence
 - Frontend client interface
@@ -63,8 +61,6 @@ Weather-Agent/
 ├── public/             # Frontend static files
 │   └── index.html
 ├── tools/              # MCP tool implementations (TypeScript)
-│   ├── fetchPosts.ts
-│   ├── getProducts.ts
 │   └── getWeather.ts
 ├── mcp/                # MCP server runtime
 │   ├── index.js        # Server entry point (tools registration, SQLite setup)
